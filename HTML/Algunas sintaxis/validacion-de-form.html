@@ -1,0 +1,34 @@
+<!--formulario con validacion requerida del lado del cliente-->
+<form action="">
+  <label for="email">Email Address (Required field):</label>
+  <input required type="email" name="email" id="email" />
+  <button type="submit">Submit Form</button>
+</form>
+
+<!--otras formas de validacion con los aributos minlength y maxlength-->
+<form action="">
+  <label for="email">Email Address (Required field):</label>
+  <input
+    required
+    type="email"
+    name="email"
+    id="email"
+    minlength="4"
+    maxlength="64"
+  />
+  <button type="submit">Submit Form</button>
+</form>
+
+<!--estados de un formulario-->
+
+<!--estado disable-->
+<input disabled type="email" name="email" id="email" />
+
+<!--atributo boleano readonly-->
+<input
+  readonly
+  type="email"
+  name="email"
+  id="email"
+  value="example@email.com"
+/>

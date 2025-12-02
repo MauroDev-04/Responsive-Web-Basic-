@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #6d84eb;
+    width: 100%;
+    min-height: calc(100% - 100px); /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana menos el padding */
+}
+
+img {
+    border-radius: 15px;
+}
+
+div {
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+.date-calendar, .date-location {
+    font-weight: bold;
+    display: inline;
+    margin: 0px 10px;
+    height: px;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    background-color: #000000;
+    margin: 0;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 5px;/* Opcional: añade espacio entre las secciones */
+}
+
+section {
+
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+p {
+    padding: 0px 20px 10px 20px;
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section ul {
+    list-style-type: square;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}

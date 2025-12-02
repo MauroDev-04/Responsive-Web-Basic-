@@ -1,0 +1,23 @@
+<!--para hacer los audios y videos accesibles, es necesario utilizar el elemento track-->
+<!-- Video -->
+<video controls src="video.mp4">
+  <track
+    src="captions.vtt" 
+    kind="captions"
+    srclang="en"
+    label="English" 
+  />
+</video>
+
+<!-- Audio -->
+<audio controls src="audio.mp3">
+  <track
+    src="captions.vtt"
+    kind="captions"
+    srclang="en"
+    label="English"
+  />
+</audio>
+
+<!--El kindse utiliza para indicarle al elemento de la pista cómo se debe utilizar. Valores 
+válidos para la kindatributo incluido captions, subtitles, chapters, y metadata.-->

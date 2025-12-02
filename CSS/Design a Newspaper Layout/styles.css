@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after  {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.newspaper-layout {
+  display: grid;
+  gap: 10px;
+  width: 1000px; 
+  margin: 15px auto 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
+
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+}
+
+.title            { grid-area: title; }
+.feature-article  { grid-area: feature-article; }
+.secondary-article{ grid-area: secondary-article; }
+.cover-image      { grid-area: cover-image; }
+.small-article1   { grid-area: small-article1; }
+.small-article2   { grid-area: small-article2; }
+.small-article3   { grid-area: small-article3; }
+
+.title {
+  grid-column: span 3;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.feature-article {
+  grid-column: span 2;
+  background-color: #f4f4f4;
+  padding: 15px;
+}
+
+.secondary-article {
+  grid-column: span 2;
+  background-color: #f4f4f4;
+  padding: 15px;
+}
+
+.cover-image {
+  max-width: 100%;
+}
+
+.cover-image img {
+  max-width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.small-article1, .small-article2, .small-article3 {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.small-article1 {
+  border-radius: 0 0 0 10px;
+}
+
+.small-article3 {
+  border-radius: 0 0 10px 0;
+}

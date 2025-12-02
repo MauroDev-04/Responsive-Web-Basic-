@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Job Application Form</title>
+</head>
+
+<body>
+  
+	<div class="container">
+
+    <h1>Job Application Form</h1>
+
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name" class="validate">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email" class="validate">
+
+      <label for="position">Position:</label>
+      <select name="position" id="position" class="professions" required>
+
+        <option value="" selected disabled>select a position</option>
+
+        <option value="general-surgery">General surgery</option> 
+
+        <option value="dermatology">Dermatology</option>
+
+        <option value="traumatology-Orthopedics">Traumatology and Orthopedics</option>
+
+        <option value="family-medicine">Family medicine</option>
+      </select>
+
+      <fieldset class="radio-group">
+
+        <legend>Availability</legend>
+
+        <label class="radio-option"><input type="radio" name="availability" value="full-time" checked ><span class="radio-label">Full-Time</span></label>
+
+        <label class="radio-option"><input type="radio" name="availability" value="part-time"><span class="radio-label">Part-Time</span></label>
+
+        <label class="radio-option"><input type="radio" name="availability" value="freelance"><span class="radio-label">Freelance</span></label>
+      </fieldset>
+
+      <label for="message">Why do you want this job?</label>
+      <textarea name="message" id="message" class="validate" required placeholder="Write your motivation"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+	</div>
+</body>
+</html>

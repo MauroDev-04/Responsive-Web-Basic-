@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(123, 61, 221);
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  background-color: white;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin: 30% auto;
+  padding: 20px;
+  padding-right: 45px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 10px  rgb(91, 14, 216);
+  min-height: 50vh;
+}
+
+h2 {
+  font-size: 2em;
+
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  font-style: bold;
+  color: #383737;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #b6b6b6;
+  height: 1.5em;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  height: 4em;
+}
+
+button {
+  margin-left: 13px;
+  padding: 15px;
+  width: 100%;
+  background-color: rgb(146, 96, 224);
+  border: 1px solid rgb(146, 96, 224);
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(91, 14, 216);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:focus {
+  border-color: black;
+  outline: none;
+}
+
+input:focus {
+  border-color: black;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: black;
+  outline: none;
+}
